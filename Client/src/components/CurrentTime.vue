@@ -1,8 +1,8 @@
 <template>
   <div className="my-4 text-sm md:text-xl" v-if="location">
-    <p><Span className="font-bold">Searched Location:</Span> {{location.locaInfo.place.formatted_address}}</p>
-    <p><Span className="font-bold">Time Zone:</Span> {{location.locaInfo.timeZone.timeZoneName}}</p>
-    <p><Span className="font-bold">Local Current Time:</Span> {{getLocalTime(location.locaInfo.timeZone)}}</p>
+    <p><span className="font-bold">Searched Location:</span> {{location.locaInfo.place.formatted_address}}</p>
+    <p><span className="font-bold">Time Zone:</span> {{location.locaInfo.timeZone.timeZoneName}}</p>
+    <p><span className="font-bold">Local Current Time:</span> {{getLocalTime(location.locaInfo.timeZone)}}</p>
   </div>
 </template>
 

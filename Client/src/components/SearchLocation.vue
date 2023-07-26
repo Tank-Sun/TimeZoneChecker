@@ -16,6 +16,7 @@
   import CurrentTime from './CurrentTime.vue';
   import MapDisplay from './MapDisplay.vue';
   import LocationTable from './LocationTable.vue';
+  import { v4 as uuidv4 } from 'uuid';
 
 
   const locations = ref([]); // array of locations
@@ -29,12 +30,11 @@
 
 
       let locationResult = {
-        id: Date.now(),
+        id: uuidv4(),
         locaInfo: response.data,
       };
       latestLocation.value = locationResult;
       locations.value = [...locations.value, locationResult];
-      console.log("locations:", locations.value);
 
     } catch (error) {
       console.error(`Error searching for location "${location}": ${error}`);
