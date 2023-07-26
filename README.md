@@ -8,16 +8,16 @@ Through building this app, I practiced my skill of building front end by Vue 3, 
 ## Features
 
 1. Get current location from browser
-!["Get current location from browser"](https://github.com/Tank-Sun/Accuenergy-YongjiaSun/blob/main/Assets/currentLocation.gif?raw=true)
+!["Get current location from browser"](https://github.com/Tank-Sun/TimeZoneChecker/blob/main/Assets/currentLocation.gif?raw=true)
 
 2. Search a location inside the search bar, show the map with a marker, put it in the table, and also show the time zone and local time
-!["Search a location"](https://github.com/Tank-Sun/Accuenergy-YongjiaSun/blob/main/Assets/searchLocation.gif?raw=true)
+!["Search a location"](https://github.com/Tank-Sun/TimeZoneChecker/blob/main/Assets/searchLocation.gif?raw=true)
 
 3. Delete the searched location and their markers
-!["Delete the searched location"](https://github.com/Tank-Sun/Accuenergy-YongjiaSun/blob/main/Assets/deleteLocation.gif?raw=true)
+!["Delete the searched location"](https://github.com/Tank-Sun/TimeZoneChecker/blob/main/Assets/deleteLocation.gif?raw=true)
 
 4. Pagination, display a maximum of 10 records on each page
-!["Pagination"](https://github.com/Tank-Sun/Accuenergy-YongjiaSun/blob/main/Assets/pagination.gif?raw=true)
+!["Pagination"](https://github.com/Tank-Sun/TimeZoneChecker/blob/main/Assets/pagination.gif?raw=true)
 
 
 ## Setup
