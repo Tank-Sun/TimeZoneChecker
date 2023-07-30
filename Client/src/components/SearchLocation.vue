@@ -1,8 +1,8 @@
 <template>
-  <div className="flex flex-col items-center w-full">
+  <div className="flex flex-col items-center w-full mb-8">
     <SearchBar @search="searchLocation" />
     <CurrentTime :location="latestLocation" />
-    <div className="flex flex-col items-center lg:flex-row w-full justify-center mt-10 md:mt-20">
+    <div className="flex flex-col items-center xl:flex-row w-full justify-center mt-10 md:mt-20">
       <MapDisplay :locations="locations" :latestLocation="latestLocation" />
       <LocationTable :locations="locations" @update:locations="updateLocations" />
     </div>
@@ -33,6 +33,7 @@
         id: uuidv4(),
         locaInfo: response.data,
       };
+      // console.log(locationResult);
       latestLocation.value = locationResult;
       locations.value = [...locations.value, locationResult];
 
