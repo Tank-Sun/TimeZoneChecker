@@ -57,7 +57,7 @@ app.get('/api/search', async (req, res) => {
     res.json(result);
   } catch (error) {
     console.error(error);
-    res.status(500).send('An error occurred while processing your request');
+    res.status(500).send(`An error occurred while processing your request: ${error.message}`);
   }
 });
 
