@@ -18,7 +18,7 @@ app.use(express.json());
 
 const apiKey = process.env.GOOGLE_MAPS_API_KEY;
 
-app.post('/geocode', async (req, res) => {
+app.post('/api/geocode', async (req, res) => {
   const lat = req.body.lat;
   const lng = req.body.lng;
   
@@ -30,7 +30,7 @@ app.post('/geocode', async (req, res) => {
   }
 });
 
-app.get('/search', async (req, res) => {
+app.get('/api/search', async (req, res) => {
   const { location } = req.query;
 
   try {
@@ -60,5 +60,10 @@ app.get('/search', async (req, res) => {
     res.status(500).send('An error occurred while processing your request');
   }
 });
+
+// Handle Production
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(`${__dirname}/public`));
+}
 
 app.listen(PORT, () => console.log(`app started on port: ${PORT}`));

@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-  import { ref, computed, defineProps, watch } from 'vue';
+  import { ref, computed, watch } from 'vue';
   import Pagination from './Pagination.vue';
 
 

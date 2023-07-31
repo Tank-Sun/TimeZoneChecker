@@ -38,7 +38,7 @@
   const geocodePosition = async (position) => {
     try {
       const response = await axios.post(
-        `http://localhost:3000/geocode`,
+        `api/geocode`,
         {
           lat: position.coords.latitude,
           lng: position.coords.longitude,

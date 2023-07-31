@@ -26,7 +26,7 @@
   // Called when a location is searched in the SearchBar component
   const searchLocation = async (location) => {
     try {
-      const response = await axios.get(`http://localhost:3000/search?location=${location}`);
+      const response = await axios.get(`api/search?location=${location}`);
 
 
       let locationResult = {
