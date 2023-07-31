@@ -1,6 +1,6 @@
 # Time Zone Checker
 
-Demo: https://timezonechecker.up.railway.app/
+**Demo:** https://timezonechecker.up.railway.app/
 
 A simple tool made by Vue 3 that can check the time zone and local current time of any location. The locations are showed and marked on Google Map, and the selected search records can be deleted.
 
